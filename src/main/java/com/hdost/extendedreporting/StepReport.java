@@ -1,9 +1,11 @@
 package com.hdost.extendedreporting;
 
+import com.ostusa.Report;
+
 import java.util.Date;
 import java.util.UUID;
 
-public class StepReport {
+public class StepReport implements Report{
 
     private ReportWriter reportWriter;
     private Date startTime;
@@ -96,5 +98,33 @@ public class StepReport {
     }
 
 
+    @Override
+    public void prepReporting() {
 
+    }
+
+    @Override
+    public void validate(String s, boolean b, boolean b1, byte[] bytes) {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b, boolean b1) {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b) {
+
+    }
+
+    @Override
+    public void writeStep(String s) {
+
+    }
+
+    @Override
+    public void writeReport() {
+
+    }
 }

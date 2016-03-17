@@ -1,5 +1,7 @@
 package com.hdost.extendedreporting;
 
+import com.ostusa.Report;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -8,7 +10,7 @@ import java.util.UUID;
 /**
  * Created by harolddost on 3/16/16.
  */
-public class TestReport {
+public class TestReport implements Report{
 
     public UUID runId;
     public UUID id;
@@ -125,4 +127,33 @@ public class TestReport {
         this.endTime = endTime;
     }
 
+    @Override
+    public void prepReporting() {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b, boolean b1, byte[] bytes) {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b, boolean b1) {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b) {
+
+    }
+
+    @Override
+    public void writeStep(String s) {
+
+    }
+
+    @Override
+    public void writeReport() {
+
+    }
 }

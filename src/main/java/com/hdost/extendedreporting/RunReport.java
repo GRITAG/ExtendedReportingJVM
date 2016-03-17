@@ -8,7 +8,7 @@ import java.util.UUID;
 /**
  * Created by harolddost on 3/16/16.
  */
-public class RunReport {
+public class RunReport implements Report{
 
     private ReportWriter report;
 
@@ -91,4 +91,33 @@ public class RunReport {
         this.endTime = endTime;
     }
 
+    @Override
+    public void prepReporting() {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b, boolean b1, byte[] bytes) {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b, boolean b1) {
+
+    }
+
+    @Override
+    public void validate(String s, boolean b) {
+
+    }
+
+    @Override
+    public void writeStep(String s) {
+
+    }
+
+    @Override
+    public void writeReport() {
+
+    }
 }
