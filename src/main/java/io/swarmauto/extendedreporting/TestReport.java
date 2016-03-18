@@ -1,4 +1,4 @@
-package com.hdost.extendedreporting;
+package io.swarmauto.extendedreporting;
 
 import com.ostusa.Report;
 
