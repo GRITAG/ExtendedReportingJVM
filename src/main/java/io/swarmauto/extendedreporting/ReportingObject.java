@@ -1,6 +1,4 @@
-package com.hdost.extendedreporting;
-
-import com.ostusa.Report;
+package io.swarmauto.extendedreporting;
 
 /**
  * Static reference to the reporting Object
