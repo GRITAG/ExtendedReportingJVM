@@ -25,7 +25,7 @@ buildscript {
 }
 
 dependencies {
-    compile('com.github.SwarmAutomation:WebDriverExtendedJVM:Dev-SNAPSHOT'){changing = true}
+    compile('com.github.SwarmAutomation:WebDriverExtendedJVM:develop-SNAPSHOT'){changing = true}
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.mockito:mockito-core:1.9.5'
