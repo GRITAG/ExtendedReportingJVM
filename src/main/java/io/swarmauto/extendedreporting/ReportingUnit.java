@@ -38,6 +38,6 @@ public class ReportingUnit implements Report {
 
     public void closeRun()
     {
-        //TODO: need to figure out how to close a run once comopleted. (Look to distributed Testing system if needed)
+        //TODO: need to figure out how to close a run once completed. (Look to distributed Testing system if needed)
     }
 }
