@@ -1,6 +1,6 @@
-package com.hdost.extendedreporting;
+package io.swarmauto.extendedreporting;
 
-import com.ostusa.Report;
+import io.swarmauto.driverextended.Report;
 
 import java.util.Date;
 import java.util.UUID;

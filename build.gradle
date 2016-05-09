@@ -1,3 +1,13 @@
+apply plugin: "jacoco"
+apply plugin: 'java'
+apply plugin: "org.ajoberstar.grgit"
+apply plugin: 'maven'
+
+import org.ajoberstar.grgit.*
+
+version '0.1'
+group = 'com.github.SwarmAutomation'
+
 repositories {
     mavenCentral()
     maven { url "https://jitpack.io" }
@@ -14,21 +24,20 @@ buildscript {
     }
 }
 
-apply plugin: 'java'
-apply plugin: "org.ajoberstar.grgit"
-apply plugin: 'maven'
-import org.ajoberstar.grgit.*
-
-version '0.1'
-group = 'com.github.hdost'
-
 dependencies {
-    compile('com.github.F1tZ81:WebDriverExtendedJVM:Dev-SNAPSHOT'){changing = true}
+    compile('com.github.SwarmAutomation:WebDriverExtendedJVM:0.1')
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.mockito:mockito-core:1.9.5'
 }
 
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
+    }
+}
+
 task clone << {
-    Grgit.clone(dir: file('/'), uri: 'https://github.com/hdost/ExtendedReportingJVM.git')
+    Grgit.clone(dir: file('/'), uri: 'https://github.com/SwarmAutomation/ExtendedReportingJVM.git')
 }

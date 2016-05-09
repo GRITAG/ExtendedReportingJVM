@@ -1,4 +1,4 @@
-package com.hdost.extendedreporting;
+package io.swarmauto.extendedreporting;
 
 import org.junit.After;
 import org.junit.Before;

@@ -1,11 +1,11 @@
-package com.hdost.extendedreporting;
+package io.swarmauto.extendedreporting;
 
-import com.ostusa.Report;
+import io.swarmauto.driverextended.Report;
 
 /**
  * Created by harolddost on 3/16/16.
  */
-public class ReportingUnit implements Report{
+public class ReportingUnit implements Report {
 
     public void prepReporting(){
         // TODO:  Create Test Report Pass in Associated Run if there is one
@@ -38,6 +38,6 @@ public class ReportingUnit implements Report{
 
     public void closeRun()
     {
-        //TODO: need to figure out how to close a run once comopleted. (Look to distributed Testing system if needed)
+        //TODO: need to figure out how to close a run once completed. (Look to distributed Testing system if needed)
     }
 }
