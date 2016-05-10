@@ -5,7 +5,7 @@ apply plugin: 'maven'
 
 import org.ajoberstar.grgit.*
 
-version '0.1'
+version '0.1.1'
 group = 'com.github.SwarmAutomation'
 
 repositories {
@@ -25,7 +25,7 @@ buildscript {
 }
 
 dependencies {
-    compile('com.github.SwarmAutomation:WebDriverExtendedJVM:0.1')
+    compile 'com.github.SwarmAutomation:WebDriverExtendedJVM:0.1.1'
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.mockito:mockito-core:1.9.5'
